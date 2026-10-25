@@ -28,10 +28,34 @@ Each test image was downscaled 4x with bicubic interpolation, then upscaled back
 
 | Metric | Bicubic | ESRGAN |
 |---|---|---|
-| Mean PSNR (dB) | 24.49 | **25.33** |
+| Mean PSNR (dB) | 24.4868 | **25.3250** |
 | Mean SSIM | 0.6956 | **0.7359** |
 
-ESRGAN achieved a higher SSIM on all 15 images and a higher PSNR on 14 of 15. The gain varied by image, from almost zero to about +2.8 dB PSNR. Per-image values are printed in the notebook.
+ESRGAN achieved a higher SSIM on all 15 images and a higher PSNR on 14 of 15 (the exception is image 0807, where bicubic was marginally better). The mean gain is +0.84 dB PSNR and +0.040 SSIM, but it varied by image: from almost zero (images 0807, 0809 and 0811) to about +2.8 dB (image 0803).
+
+<details>
+<summary>Per-image results</summary>
+
+| Image | PSNR bicubic | PSNR ESRGAN | SSIM bicubic | SSIM ESRGAN |
+|---|---|---|---|---|
+| 0801x4.png | 22.6197 | 23.1400 | 0.5514 | 0.6194 |
+| 0802x4.png | 27.1498 | 29.7806 | 0.8462 | 0.8557 |
+| 0803x4.png | 26.5398 | 29.3292 | 0.8523 | 0.8868 |
+| 0804x4.png | 21.4771 | 22.3625 | 0.5830 | 0.6583 |
+| 0805x4.png | 24.9408 | 25.3389 | 0.6507 | 0.6990 |
+| 0806x4.png | 25.3269 | 26.0033 | 0.7762 | 0.8028 |
+| 0807x4.png | 22.1161 | 22.0632 | 0.5369 | 0.5614 |
+| 0808x4.png | 24.3525 | 25.4123 | 0.7769 | 0.8018 |
+| 0809x4.png | 25.5021 | 25.5330 | 0.5952 | 0.6352 |
+| 0810x4.png | 25.9795 | 26.1294 | 0.6887 | 0.7198 |
+| 0811x4.png | 25.0036 | 25.0220 | 0.6030 | 0.6335 |
+| 0812x4.png | 22.7846 | 23.6956 | 0.6778 | 0.7327 |
+| 0813x4.png | 23.6749 | 25.0195 | 0.7319 | 0.7854 |
+| 0814x4.png | 24.8322 | 25.1338 | 0.8121 | 0.8416 |
+| 0815x4.png | 25.0023 | 25.9114 | 0.7518 | 0.8048 |
+| **Mean** | **24.4868** | **25.3250** | **0.6956** | **0.7359** |
+
+</details>
 
 Caveats: the test degradation (bicubic downscaling) is the one the model was trained for, so the numbers say little about real-world artifacts such as JPEG compression or noise. The input files are themselves low-resolution (x4) versions, so the references are not true high-resolution images, and the absolute values cannot be compared with published benchmarks.
 
