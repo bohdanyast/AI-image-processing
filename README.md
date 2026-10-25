@@ -6,7 +6,7 @@ ESRGAN super-resolution, Stable Diffusion v1.5 and VGG19 neural style transfer, 
 
 ## Overview
 
-The notebook `image_enhancement_generation_style_transfer.ipynb` explores three families of models for images:
+The notebook `image-enhancement-generation-style-transfer.ipynb` explores three families of models for images:
 
 | Part | Task | Model | Library |
 |---|---|---|---|
@@ -93,7 +93,7 @@ Outputs (comparison figures, generated images, the stylized image) are saved to 
 The repository does not include any input images.
 
 - **ESRGAN test images:** the first 15 images (`0801x4.png` to `0815x4.png`) of the DIV2K validation set, bicubic x4 low-resolution version. DIV2K is made available for academic research purposes only, so the images are **not** redistributed here. Download the dataset from the [official DIV2K page](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and place the images in the folder set in `ESRGAN_INPUT_DIR`.
-- **Image-to-image input:** a single demonstration image (`girl.png`) from the Kaggle dataset [img2imgprediffusedimages](https://www.kaggle.com/datasets/bodyastar/img2imgprediffusedimages). The image is not redistributed in this repository; use any image you have the right to process.
+- **Image-to-image input:** a single demonstration image (`girl.png`). It is not redistributed in this repository; use any image you have the right to process and set its path in `IMG2IMG_INPUT`.
 - **Style transfer images:** [images-for-style-transfer](https://www.kaggle.com/datasets/soumikrakshit/images-for-style-transfer) by Soumik Rakshit (the content image `TestCases/22714.jpg` and the artwork `Artworks/108700.jpg`). The images are not redistributed here. Check the dataset page for its license and the copyright status of the individual artworks before reusing them.
 
 If you cite the ESRGAN benchmark data, please also cite:
