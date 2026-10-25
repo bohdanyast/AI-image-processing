@@ -92,7 +92,7 @@ Outputs (comparison figures, generated images, the stylized image) are saved to 
 
 The repository does not include any input images.
 
-- **ESRGAN test images:** the first 15 images (`0801x4.png` to `0815x4.png`) of the DIV2K validation set, bicubic x4 low-resolution version. DIV2K is made available for academic research purposes only, so the images are **not** redistributed here. Download the dataset from the [official DIV2K page](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and place the images in the folder set in `ESRGAN_INPUT_DIR`.
+- **ESRGAN test images:** the first 15 images (`0801x4.png` to `0815x4.png`) of the DIV2K validation set, bicubic x4 low-resolution version. The notebook downloads them automatically from the [official DIV2K server](https://data.vision.ee.ethz.ch/cvl/DIV2K/) when the target folder does not exist. DIV2K is made available for academic research purposes only, so the images are **not** redistributed here.
 - **Image-to-image input:** a single demonstration image (`girl.png`). It is not redistributed in this repository; use any image you have the right to process and set its path in `IMG2IMG_INPUT`.
 - **Style transfer images:** [images-for-style-transfer](https://www.kaggle.com/datasets/soumikrakshit/images-for-style-transfer) by Soumik Rakshit (the content image `TestCases/22714.jpg` and the artwork `Artworks/108700.jpg`). The images are not redistributed here. Check the dataset page for its license and the copyright status of the individual artworks before reusing them.
 
