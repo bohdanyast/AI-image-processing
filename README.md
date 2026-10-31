@@ -6,7 +6,7 @@ ESRGAN super-resolution, Stable Diffusion v1.5 and VGG19 neural style transfer, 
 
 ## Overview
 
-The notebook `image-enhancement-generation-style-transfer.ipynb` explores three families of models for images:
+The notebook `image_enhancement_generation_style_transfer.ipynb` explores three families of models for images:
 
 | Part | Task | Model | Library |
 |---|---|---|---|
